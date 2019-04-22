@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+#include "park.h"
+
+void RunChase(Scene allAnimals)
+{
+    for (int time = 1; time <= 30; time++)
+    {
+        for (int k = 0; k < allAnimals.Length(); k++)
+        {
+            Position i = allAnimals[k]->Pos();
+            cout << allAnimals[k]->Name() << endl;
+            i.Print();
+            if (allAnimals[k]->Chase())
+            {
+                cout << "mouse caught at time " << time << endl;
+                return;
+            }
+        }
+        
+    }
+    cout << "Chase took too long; all animals drifted away." << endl;
+}
+
+int main()
+{
+    Scene allAnimals;
+    RunChase(allAnimals);
+    return 0;
+}
