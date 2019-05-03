@@ -1,2 +1,0 @@
-update u 8
-update manatee 84398
