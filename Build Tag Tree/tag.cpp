@@ -103,7 +103,7 @@ int main() {
 
         for (int i = 0; i < line.size(); i++) {
             char c = line[i];
-            if (c == '.' || c == '~') {
+            if (c == '.' || c == '-') {
                 if (curr->mp.count(tag) == 0) {
                     // cout << "map Not Found!" << endl;
                     cout << "Not Found!" << endl;
