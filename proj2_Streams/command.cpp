@@ -25,7 +25,6 @@ void InterpretQuit(istream&);
 int main()
 {
 	Inventory inv;
-	inv = Inventory();
     InterpretCommands(cin, inv);
     return 0;
 }

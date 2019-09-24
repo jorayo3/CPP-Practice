@@ -8,7 +8,7 @@ int main() {
 	int sum = 0;
 	cout << "Please enter integers.\n";
 	do {
-		second = first
+		second = first;
 		cin >> first;
 		subtotal += first;
 		if (first == 0 && second != 0) { //condition prevents printing subtotal twice

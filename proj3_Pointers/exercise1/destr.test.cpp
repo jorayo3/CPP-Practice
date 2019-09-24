@@ -23,7 +23,6 @@ int main()
     {
         delete list;
     }
-    cout << list << endl;
     list = 0;
 
     return 0;

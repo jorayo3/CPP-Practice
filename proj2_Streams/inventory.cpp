@@ -9,7 +9,7 @@ Inventory::Inventory() {
 }
 
 void Inventory::Update(string item, int amount) {
-	for (unsigned i = 0; i < entries.size(); i++) {
+	for (unsigned int i = 0; i < entries.size(); i++) {
 		if (entries.at(i).item == item) {
 			entries.at(i).amount = amount;
 			return;
@@ -20,14 +20,14 @@ void Inventory::Update(string item, int amount) {
 
 void Inventory::ListByName() {
 	sort (entries.begin(), entries.end());
-	for (unsigned i = 0; i < entries.size(); i++) {
+	for (unsigned int i = 0; i < entries.size(); i++) {
 		cout << entries.at(i).item << ' ' << entries.at(i).amount << endl;
 	}
 }
 
 void Inventory::ListByQuantity() {
 	sort (entries.begin(), entries.end(), greater<Entry>());
-	for (unsigned i = 0; i < entries.size(); i++) {
+	for (unsigned int i = 0; i < entries.size(); i++) {
 		cout << entries.at(i).item << ' ' << entries.at(i).amount << endl;
 	}
 }
